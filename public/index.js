@@ -32,7 +32,7 @@ root.appendChild(AddCard());
 root.appendChild(pre())
 root.appendChild(MainCard("list of employees"));
 root.appendChild(MainCard("list of active employees"));
-root.appendChild(MainCard("listado of inactive employees"));
+root.appendChild(MainCard("list of inactive employees"));
 
 employee.forEach((e) => {
   let text = document.createElement("p");
