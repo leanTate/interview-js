@@ -5,7 +5,28 @@ let root = document.getElementById("root");
 let card = document.getElementsByClassName("MainCard");
 
 let employeeString = localStorage.getItem("employee");
-let employee= employeeString? JSON.parse(employeeString) : [];
+let employee= employeeString? JSON.parse(employeeString) : [
+  {
+    name: "Facundo",
+    surname: "Gomez",
+    state: "true"
+  },
+  {
+    name: "Agustin",
+    surname: "Robbiano",
+    state: "false"
+  },
+  {
+    name: "Ignacio",
+    surname: "Granati",
+    state: "true"
+  },
+  {
+    name: "Juan",
+    surname: "Garcia Carvallo",
+    state: "false"
+  },
+];
 
 root.appendChild(AddCard());
 root.appendChild(pre())
